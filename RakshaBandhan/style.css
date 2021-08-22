@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #06031d;
+}
+.wish{
+    margin-top: 1.25rem;
+    text-align: center;
+    background: linear-gradient(180deg, #f80112, #2602f5 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 3.75rem;
+    font-family: wish;
+}
+.name{
+    margin-top: 1.25rem;
+    text-align: center;
+    background: linear-gradient(180deg, #f80112, #2602f5 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 6.25rem;
+    font-family: wish;
+}
+.name:hover{
+    -webkit-box-reflect: below -0.5re -webkit-gradient(linear, right top, right bottom, from(transparent color-stop(85%, transparent), to(rgba(42, 99, 99, 1))));
+}
+.wrapper{
+    position: relative;
+    width: 20rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    perspective: 62.5rem;
+
+}
+.img-area{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-18.75rem);
+    animation: animate 25s steps(1000, end) infinite;
+
+}
+.single-img{
+    position: absolute;
+    width: 15.625rem;
+    height: 9.375rem;
+    top: 0.625rem;
+    left: 0.625rem;
+
+}
+.single-img img{
+    width: 15.938rem;
+    height: 9.375rem;
+    border: 0.313rem solid #fff;
+
+}
+.single-img.img-one{
+    transform: rotateY(0deg) translateZ(18.75rem);
+}
+.single-img.img-two{
+    transform: rotateY(60deg) translateZ(18.75rem);
+
+}
+
+.single-img.img-three{
+    transform: rotateY(120deg) translateZ(18.75rem);
+
+}
+
+
+.single-img.img-four{
+    transform: rotateY(180deg) translateZ(18.75rem);
+
+}
+.single-img.img-five{
+    transform: rotateY(240deg) translateZ(18.75rem);
+
+}
+.single-img.img-six{
+    transform: rotateY(300deg) translateZ(18.75rem);
+}
+img{
+    transition: 1%;
+
+}
+img:hover{
+    transition: 1%;
+
+}
+@keyframes animate{
+    from{
+        transform: rotateY(-360deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+@font-face{
+    font-family: wish;
+    src: url(wish.otf);
+}
+@media screen and (max-width:62.5rem) {
+    .wish{
+        font-size: 3.125rem;
+    }
+    .name{
+        font-size: 5rem;
+        margin-left: 0.125rem;
+
+    }
+    .single-img img{
+        width: 12.5rem;
+        height: 8.125rem;
+        border: 0.313rem solid #fff;
+    }
+}
+@media screen and (max-width: 50rem) {
+    .wish{
+        font-size: 3.125rem;
+
+    }
+    .name{
+        font-size: 5rem;
+        height: 5rem;
+
+    }
+    .single-img img{
+        width: 9.375rem;
+        height: 5rem;
+        border: 0.313rem solid #fff;
+
+
+    }
+    .single-img.img-one{
+        transform: rotateY(0deg) translateZ(12.5rem);
+    }
+
+    .single-img.img-two{
+        transform: rotateY(60deg) translateZ(12.5rem);
+    }
+
+    .single-img.img-three{
+        transform: rotateY(120deg) translateZ(12.5rem);
+    }
+
+    .single-img.img-four{
+        transform: rotateY(180deg) translateZ(12.5rem);
+    }
+    .single-img.img-five{
+        transform: rotateY(240deg) translateZ(12.5rem);
+    }
+    .single-img.img-six{
+        transform: rotateY(300deg) translateZ(12.5rem);
+    }
+
+
+}
+@media screen and (max-width: 30rem){
+    .wish{
+        font-size: 1.75rem;
+
+    }
+    .name{
+        font-size: 2.5rem;
+        margin-left: 0.188rem;
+    }
+    .single-img img{
+        width: 8.125rem;
+        height: 3.75rem;
+        border: 0.313rem solid #fff;
+
+    }
+    .single-img.img-one{
+        transform: rotateY(0deg) translateZ(12.5rem);
+    }
+
+    .single-img.img-two{
+        transform: rotateY(60deg) translateZ(12.5rem);
+    }
+
+    .single-img.img-three{
+        transform: rotateY(120deg) translateZ(12.5rem);
+    }
+
+    .single-img.img-four{
+        transform: rotateY(180deg) translateZ(12.5rem);
+    }
+    .single-img.img-five{
+        transform: rotateY(240deg) translateZ(12.5rem);
+
+    }
+    .single-img.img-six{
+        transform: rotateY(300deg) translateZ(12.5rem);
+    }
+
+    
+}
+.memory{
+    margin-bottom: 1.25rem;
+    text-align: center;
+    background: linear-gradient(180deg, #f80112, #2602f5 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 3.75rem;
+    font-family: wish;
+}
+/* .section{
+    width: 1rem;
+    height: 1rem;
+} */
